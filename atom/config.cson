@@ -1,0 +1,148 @@
+"*":
+  "advanced-open-file":
+    defaultInputValue: "Project root"
+    helmDirSwitch: true
+  "atom-beautify":
+    _analyticsUserId: "fd3b81d0-a42d-4403-ad6d-2e64e878d591"
+    general:
+      _analyticsUserId: "dc3ab63f-4841-4262-8f99-b9487fa4238c"
+  "atom-css-comb":
+    projectConfigs: ".csscomb.json"
+    readyMadeConfigs: "zen"
+  "atom-material-ui":
+    colors:
+      abaseColor:
+        alpha: 1
+        blue: 147
+        green: 145
+        red: 0
+    fonts:
+      fontSize: 12
+    tabs: {}
+    treeView:
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
+  "atom-ternjs":
+    displayAboveSnippets: true
+    lint: true
+    useSnippets: true
+    useSnippetsAndFunction: true
+  build: {}
+  "color-picker":
+    abbreviateValues: true
+  core:
+    disabledPackages: [
+      "node-debugger"
+      "minimap-find-and-replace"
+      "atom-html-preview"
+      "autoprefixer"
+      "build"
+      "atom-less"
+      "atom-mocha"
+      "linter-csslint"
+      "jsformat"
+      "autoflow"
+      "file-icons"
+      "atom-react-native-css"
+      "git-blame"
+      "csscomb"
+      "csslint"
+      "vim-mode"
+      "color-picker"
+      "react"
+    ]
+    packagesWithKeymapsDisabled: [
+      "styleguide"
+    ]
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+  docblockr:
+    auto_add_method_tag: true
+    deep_indent: true
+    development_mode: true
+  editor:
+    backUpBeforeSaving: true
+    fontFamily: "Menlo"
+    fontSize: 15
+    invisibles: {}
+    preferredLineLength: 120
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    tabType: "soft"
+  emmet: {}
+  "exception-reporting":
+    userId: "15e11184-a4bd-7c07-6254-5a37e8afee03"
+  "file-icons": {}
+  "find-and-replace":
+    focusEditorAfterSearch: true
+    openProjectFindResultsInRightPane: true
+    scrollToResultOnLiveSearch: true
+  "git-plus": {}
+  jsformat: {}
+  "language-babel": {}
+  linter:
+    errorPanelHeight: 24
+    lintOnFly: false
+  "linter-eslint":
+    fixOnSave: true
+    lintHtmlFiles: true
+    useGlobalEslint: true
+  "linter-stylelint":
+    enableHtmlLinting: true
+    useStandard: true
+  "markdown-preview":
+    breakOnSingleNewline: true
+    useGitHubStyle: true
+  "markdown-writer":
+    tableExtraPipes: true
+  "merge-conflicts": {}
+  minimap:
+    plugins:
+      "find-and-replace": true
+    scrollAnimation: true
+  "node-debugger": {}
+  "one-dark-ui": {}
+  "one-light-ui": {}
+  pigments:
+    groupPaletteColors: "by file"
+  react:
+    enabledForAllJavascriptFiles: true
+  "seti-ui":
+    compactView: true
+  stylefmt: {}
+  term3:
+    autoRunCommand: "login -f `whoami`"
+  "tool-bar":
+    iconSize: "16px"
+  welcome:
+    showOnStartup: false
+".babel.regexp.source":
+  editor:
+    preferredLineLength: 120
+".coffee.jsx.source":
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: true
+    preferredLineLength: 100
+".diff.source":
+  editor:
+    preferredLineLength: 120
+".js.jsx.source":
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: true
+    preferredLineLength: 100
+    softWrapAtPreferredLineLength: false
+".shell-session.text":
+  editor:
+    preferredLineLength: 120
+".shell.source":
+  editor:
+    preferredLineLength: 120
