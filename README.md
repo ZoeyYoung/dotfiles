@@ -7,3 +7,5 @@
 
 * [GitHub ❤ ~/](http://dotfiles.github.com/)
 * https://github.com/nicksp/dotfiles
+* https://github.com/jaywcjlove/awesome-mac
+* https://github.com/mehcode/awesome-atom
