@@ -58,6 +58,11 @@ source $ZSH/oh-my-zsh.sh
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+export PATH="$(brew --prefix findutils)/libexec/gnubin:$PATH"
+export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
+export MANPATH="$(brew --prefix findutils)/libexec/gnuman:$MANPATH"
+
 export ANDROID_HOME=/usr/local/opt/android-sdk
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home
 export JAVA_HOME

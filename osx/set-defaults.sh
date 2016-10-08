@@ -70,12 +70,18 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
-# Disable some menu bar icons: Time Machine, Volume and User
+# Menu bar: hide the Time Machine, Volume, and User icons
 for domain in ~/Library/Preferences/ByHost/com.apple.stytemuiserver.*; do
-  "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-  "/System/Library/CoreServices/Menu Extras/Volume.menu" \
-  "/System/Library/CoreServices/Menu Extras/User.menu"
+  defaults write "${domain}" dontAutoLoad -array \
+    "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
+    "/System/Library/CoreServices/Menu Extras/Volume.menu" \
+    "/System/Library/CoreServices/Menu Extras/User.menu"
 done
+defaults write com.apple.systemuiserver menuExtras -array \
+	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
+	"/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 ###############################################################################
 # Activity Monitor                                                            #
@@ -219,8 +225,6 @@ defaults write com.apple.dock show-process-indicators -bool true
 # Add several spacers
 defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
 defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
-defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
-defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
 
 # Automatically hide and show the Dock
 # defaults write com.apple.dock autohide -bool true
@@ -231,8 +235,8 @@ defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-ty
 
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
            "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
-           "Terminal" "Twitter" "iCal"; do
-           kill all "${app}" > /dev/null 2>&1
+           "Terminal" "iCal"; do
+  kill all "${app}" > /dev/null 2>&1
 done
 
 # Wait a bit before moving on...
