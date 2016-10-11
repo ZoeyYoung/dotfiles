@@ -13,7 +13,7 @@ https://github.com/robbyrussell/oh-my-zsh
 
 配置文件：**~/.zshrc**  ==> 直接打开看看吧
 
-每次更改配置文件后需重新打开命令行tab，或使用`source ~/.zshrc`来使配置生效
+每次更改配置文件后需重新打开命令行tab，或使用`source ~/.zshrc`来使配置生效
 
 #### 主题配置
 
@@ -27,7 +27,7 @@ ZSH_THEME="random" ==> 随机，遇到喜欢的时候可使用`echo $ZSH_THEME`�
 
 如果是使用iTerm2，设置一下颜色主题效果更好
 
-iTerm2主题库: http://iterm2colorschemes.com/ ==> 里面有介绍使用方式
+iTerm2主题库: http://iterm2colorschemes.com/ ==> 里面有介绍使用方式
 
 #### 使用插件
 
