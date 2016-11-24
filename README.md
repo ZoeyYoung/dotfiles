@@ -9,3 +9,7 @@
 * https://github.com/nicksp/dotfiles
 * https://github.com/jaywcjlove/awesome-mac
 * https://github.com/mehcode/awesome-atom
+
+## 软件
+
+五笔输入法 https://qingg.im/
